@@ -1,0 +1,23 @@
+{
+    "name": "",
+    "build": {
+        "dockerfile": "Dockerfile"
+    },
+    "customizations": {
+        "vscode": {
+            "settings": {
+                "python.pythonPath": "/usr/local/bin/python"
+            },
+            "extensions": [
+                "ms-python.python",
+                "ms-python.debugpy"
+            ]
+        }
+    },
+    "forwardPorts": [5678],
+    "mounts": [
+        "source=${localWorkspaceFolder}/ejemplos,target=/usr/src/app,type=bind"
+    ],
+    "workspaceFolder": "/usr/src/app",
+    "remoteUser": "root"
+}
