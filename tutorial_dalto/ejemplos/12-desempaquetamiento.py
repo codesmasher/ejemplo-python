@@ -1,8 +1,17 @@
-datos = ["Enrique", "Sotelo", 45, "México"
-print(type(datos))  # Imprime el tipo de datos
-# desempaquetamiento de tuplas
-nombre, apellido, edad, pais = datos
+lista = ["Enrique", "Sotelo", 45]
+print(type(lista)) # Imprime el tipo de datos
+
+tupla = ("CDMX", "México", "Hombre")
+print(type(tupla)) # Imprime el tipo de datos
+
+# desempaquetamiento de listas
+nombre, apellido, edad = lista
 print(f"Nombre: {nombre}")
 print(f"Apellido: {apellido}")
 print(f"Edad: {edad}")
-print(f"País: {pais}") 
+
+# desempaquetamiento de tuplas
+ciudad, pais, genero = tupla
+print(f"Ciudad: {ciudad}")
+print(f"País: {pais}")
+print(f"Genero: {genero}")
